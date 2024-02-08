@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(/images/bg-image.jpg);
+    background-size: cover;
+}
+
+.message-block {
+    position: absolute;
+    left: -17rem;
+    max-width: 20rem;
+    z-index: 2;
+    min-height: 35rem;
+    border: 2px solid;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: start;
+    align-content: space-around;
+    padding: 20px 15px;
+    border-radius: 10px;
+    backdrop-filter: blur(15px);
+    background-color: rgba(255, 255, 255, 0.5); /* voeg deze regel toe */
+}
+.message-block p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+}
+
+#message {
+    max-width: 95%;
+    min-width: 95%;
+    min-height: 18rem;
+    max-height: 18rem;
+    text-align: start;
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+
+/*inputs*/
+
+input[type="text"] {
+    width: 95%;
+    padding: 5px 2px;
+    margin: 8px 0;
+    border: 2px solid;
+    border-radius: 10px;
+}
+
+input[type="submit"] {
+    width: 95%;
+    padding: 5px 2px;
+    margin: 8px 0;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#name {
+    padding: 5px 10px;
+}
+
+.add-message {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    position: absolute;
+    padding: 10px 2px;
+    border-left: none;
+    /* left: 100%; */
+    right: -50px;
+    width: 50px;
+    backdrop-filter: blur(15px);
+    background-color: rgba(255, 255, 255, 0.6); /* voeg deze regel toe */
+    border-radius: 0px 10px 10px 0px;
+    cursor: pointer;
+}
